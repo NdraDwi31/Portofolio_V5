@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Code2, Github, Globe, User } from 'lucide-react';
+import { FaInstagram, FaLinkedin, FaTiktok, FaGlobe } from 'react-icons/fa'; // Ganti lucide-react dengan react-icons
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -36,13 +36,18 @@ const BackgroundEffect = () => (
   </div>
 );
 
-const IconButton = ({ Icon }) => (
-  <div className="relative group hover:scale-110 transition-transform duration-300">
+const IconButton = ({ Icon, link }) => (
+  <a
+    href={link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative group hover:scale-110 transition-transform duration-300"
+  >
     <div className="absolute -inset-2 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full blur opacity-30 group-hover:opacity-75 transition duration-300" />
     <div className="relative p-2 sm:p-3 bg-black/50 backdrop-blur-sm rounded-full border border-white/10">
       <Icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-white" />
     </div>
-  </div>
+  </a>
 );
 
 const WelcomeScreen = ({ onLoadingComplete }) => {
@@ -104,14 +109,18 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
           
           <div className="relative min-h-screen flex items-center justify-center px-4">
             <div className="w-full max-w-4xl mx-auto">
-              {/* Icons */}
+              {/* Social Icons */}
               <motion.div 
                 className="flex justify-center gap-3 sm:gap-4 md:gap-8 mb-6 sm:mb-8 md:mb-12"
                 variants={childVariants}
               >
-                {[Code2, User, Github].map((Icon, index) => (
+                {[
+                  { Icon: FaInstagram, link: 'https://www.instagram.com/mif.arifin.ae?igsh=ZWpwcXluZ3hodDd6' },
+                  { Icon: FaLinkedin, link: ' https://www.linkedin.com/in/miftakhul-arifin-5397431a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
+                  { Icon: FaTiktok, link: 'https://www.tiktok.com/@taaku_?_t=ZS-90u2Xfy6hBC&_r=1' },
+                ].map(({ Icon, link }, index) => (
                   <div key={index} data-aos="fade-down" data-aos-delay={index * 200}>
-                    <IconButton Icon={Icon} />
+                    <IconButton Icon={Icon} link={link} />
                   </div>
                 ))}
               </motion.div>
@@ -159,9 +168,9 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/20 to-purple-600/20 rounded-full blur-md group-hover:blur-lg transition-all duration-300" />
                   <div className="relative flex items-center gap-2 text-lg sm:text-xl md:text-2xl">
-                    <Globe className="w-4 h-4 sm:w-5 sm:h-5 text-indigo-600" />
+                    <FaGlobe className="w-4 h-4 sm:w-5 sm:h-5 text-indigo-600" />
                     <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                      <TypewriterEffect text="www.eki.my.id" />
+                      <TypewriterEffect text="Miftakhul Arifin" />
                     </span>
                   </div>
                 </a>

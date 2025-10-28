@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, ExternalLink, Instagram, Sparkles } from "lucid
 import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { Facebook } from "@mui/icons-material"
+// import { Facebook } from "@mui/icons-material"
 
 // Memoized Components
 const StatusBadge = memo(() => (
@@ -78,10 +78,10 @@ const SocialLink = memo(({ icon: Icon, link }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Hello! I’m Miftakhul Arifin,", " a results-oriented and analytical individual with strong leadership and communication skills."];
+const WORDS = ["Hello! I’m Miftakhul Arifin,", " a results-oriented and analytical individual ", " with strong leadership and communication skills."];
 // const TECH_STACK = ["PHP", "Phyton", "Java", "React"];
 const SOCIAL_LINKS = [
-  { icon: Facebook, link: "https://Facebook.com/" },
+  // { icon: Facebook, link: "https://Facebook.com/" },
   { icon: Linkedin, link: "https://www.linkedin.com/" },
   { icon: Instagram, link: "https://www.instagram.com/" }
 ];

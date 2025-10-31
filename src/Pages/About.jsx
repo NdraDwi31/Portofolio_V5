@@ -236,12 +236,12 @@ Throughout my academic and professional journey, I have developed the ability to
         </div>
         
         <blockquote className="text-gray-300 text-center lg:text-left italic font-medium text-sm relative z-10 pl-6">
-          "Gusti Mboten Nate Sare."
+          "Al-Imron 110"
         </blockquote>
       </div>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
-              <a href="https://drive.google.com/drive/folders/1BOm51Grsabb3zj6Xk27K-iRwI1zITcpo" className="w-full lg:w-auto">
+              <a href="https://drive.google.com/file/d/16Jy1qyA8l-kImz5wnTJ-NP--S-GIj2Ft/view?usp=drive_link" className="w-full lg:w-auto">
               <button 
                 data-aos="fade-up"
                 data-aos-duration="800"

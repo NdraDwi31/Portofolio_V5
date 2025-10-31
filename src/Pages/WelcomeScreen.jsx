@@ -116,7 +116,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
               >
                 {[
                   { Icon: FaInstagram, link: 'https://www.instagram.com/mif.arifin.ae?igsh=ZWpwcXluZ3hodDd6' },
-                  { Icon: FaLinkedin, link: ' https://www.linkedin.com/in/miftakhul-arifin-5397431a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
+                  { Icon: FaLinkedin, link: 'https://www.linkedin.com/in/miftakhul-arifin-5397431a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
                   { Icon: FaTiktok, link: 'https://www.tiktok.com/@taaku_?_t=ZS-90u2Xfy6hBC&_r=1' },
                 ].map(({ Icon, link }, index) => (
                   <div key={index} data-aos="fade-down" data-aos-delay={index * 200}>
@@ -144,10 +144,10 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                   </div>
                   <div>
                     <span data-aos="fade-up" data-aos-delay="800" className="inline-block px-2 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                      Portfolio
+                      Personal Website
                     </span>{' '}
                     <span data-aos="fade-up" data-aos-delay="1000" className="inline-block px-2 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                      Website
+                      Portofolio
                     </span>
                   </div>
                 </h1>
@@ -161,7 +161,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                 data-aos-delay="1200"
               >
                 <a
-                  href="https://www.eki.my.id"
+                  href="https://portofolio-v5-agb.pages.dev/"
                   className="inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full relative group hover:scale-105 transition-transform duration-300"
                   target="_blank"
                   rel="noopener noreferrer"

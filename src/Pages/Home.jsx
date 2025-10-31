@@ -82,8 +82,8 @@ const WORDS = ["Hello! I’m Miftakhul Arifin,", " a results-oriented and analyt
 // const TECH_STACK = ["PHP", "Phyton", "Java", "React"];
 const SOCIAL_LINKS = [
   // { icon: Facebook, link: "https://Facebook.com/" },
-  { icon: Linkedin, link: "https://www.linkedin.com/" },
-  { icon: Instagram, link: "https://www.instagram.com/" }
+  { icon: Linkedin, link: "https://www.linkedin.com/in/miftakhul-arifin-5397431a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+  { icon: Instagram, link: "https://www.instagram.com/mif.arifin.ae?igsh=ZWpwcXluZ3hodDd6" }
 ];
 
 const Home = () => {

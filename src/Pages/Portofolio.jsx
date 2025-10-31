@@ -105,17 +105,13 @@ function a11yProps(index) {
 // techStacks tetap sama
 const techStacks = [
   { icon: "capcut-seeklogo-2.svg", language: "Capcut" },
-  { icon: "css.svg", language: "CSS" },
-  { icon: "javascript.svg", language: "JavaScript" },
-  { icon: "tailwind.svg", language: "Tailwind CSS" },
-  { icon: "reactjs.svg", language: "ReactJS" },
-  { icon: "vite.svg", language: "Vite" },
-  { icon: "nodejs.svg", language: "Node JS" },
-  { icon: "bootstrap.svg", language: "Bootstrap" },
-  { icon: "firebase.svg", language: "Firebase" },
-  { icon: "MUI.svg", language: "Material UI" },
-  { icon: "vercel.svg", language: "Vercel" },
-  { icon: "SweetAlert.svg", language: "SweetAlert2" },
+  { icon: "ps.svg", language: "Photoshop" },
+  { icon: "canva.svg", language: "Canva" },
+  { icon: "vn.svg", language: "VN" },
+  { icon: "Figma.png", language: "Figma" },
+  { icon: "coreldraw-x7-seeklogo.png", language: "CorelDraw" },
+  { icon: "office.svg", language: "M Office" },
+  { icon: "gpt.svg", language: "Chat GPT" }
 ];
 
 export default function FullWidthTabs() {
@@ -285,7 +281,7 @@ export default function FullWidthTabs() {
           >
             <Tab
               icon={<Code className="mb-2 w-5 h-5 transition-all duration-300" />}
-              label="Experience"
+              label="Project's"
               {...a11yProps(0)}
             />
             <Tab

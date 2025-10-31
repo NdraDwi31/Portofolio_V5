@@ -9,7 +9,7 @@ const socialLinks = [
     displayName: "Let's Connect",
     subText: "on LinkedIn",
     icon: Linkedin,
-    url: "https://www.linkedin.com/",
+    url: "https://www.linkedin.com/in/miftakhul-arifin-5397431a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     color: "#0A66C2",
     gradient: "from-[#0A66C2] to-[#0077B5]",
     isPrimary: true,
@@ -17,16 +17,16 @@ const socialLinks = [
   {
     name: "Instagram",
     displayName: "Instagram",
-    subText: "@endra",
+    subText: "@mif.arifin.ae",
     icon: Instagram,
-    url: "https://www.instagram.com/",
+    url: "https://www.instagram.com/mif.arifin.ae?igsh=ZWpwcXluZ3hodDd6",
     color: "#E4405F",
     gradient: "from-[#833AB4] via-[#E4405F] to-[#FCAF45]",
   },
   {
     name: "TikTok",
     displayName: "TikTok",
-    subText: "@endraaa",
+    subText: "@taaku",
     icon: ({ className, ...props }) => (
       <svg
         width="24px"
@@ -51,7 +51,7 @@ const socialLinks = [
         </g>
       </svg>
     ),
-    url: "https://tiktok.com/",
+    url: "https://www.tiktok.com/@taaku_?_t=ZS-90u2Xfy6hBC&_r=1",
     color: "black",
     gradient: "from-[#000000] via-[#25F4EE] to-[#FE2C55]",
   },

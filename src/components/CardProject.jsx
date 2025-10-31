@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 import { ExternalLink, ArrowRight } from 'lucide-react';
 
 const CardProject = ({ Img, Title, Description, Link: ProjectLink, id }) => {
-  // Handle kasus ketika ProjectLink kosong
+  // Deteksi apakah file adalah video
+  const isVideo = Img && (Img.endsWith(".mp4") || Img.endsWith(".webm") || Img.endsWith(".ogg"));
+
+  // Handle ketika ProjectLink kosong
   const handleLiveDemo = (e) => {
     if (!ProjectLink) {
       console.log("ProjectLink kosong");
@@ -23,17 +26,27 @@ const CardProject = ({ Img, Title, Description, Link: ProjectLink, id }) => {
 
   return (
     <div className="group relative w-full">
-            
       <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-lg border border-white/10 shadow-2xl transition-all duration-300 hover:shadow-purple-500/20">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
     
         <div className="relative p-5 z-10">
           <div className="relative overflow-hidden rounded-lg">
-            <img
-              src={Img}
-              alt={Title}
-              className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-            />
+            {/* Jika file video tampilkan <video>, kalau gambar tampilkan <img> */}
+            {isVideo ? (
+              <video
+                src={Img}
+                controls
+                className="w-full h-full object-cover rounded-lg"
+                preload="metadata"
+              />
+            ) : (
+              <img
+                src={Img}
+                alt={Title}
+                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+            )}
           </div>
           
           <div className="mt-4 space-y-3">
@@ -46,9 +59,10 @@ const CardProject = ({ Img, Title, Description, Link: ProjectLink, id }) => {
             </p>
             
             <div className="pt-4 flex items-center justify-between">
-              {/* {ProjectLink ? (
+              {/* Tombol Live Demo */}
+              {ProjectLink ? (
                 <a
-                href={ProjectLink || "#"}
+                  href={ProjectLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={handleLiveDemo}
@@ -59,10 +73,9 @@ const CardProject = ({ Img, Title, Description, Link: ProjectLink, id }) => {
                 </a>
               ) : (
                 <span className="text-gray-500 text-sm">Demo Not Available</span>
-              )} */}
+              )}
               
-     
-
+              {/* Tombol Detail */}
               {id ? (
                 <Link
                   to={`/project/${id}`}
